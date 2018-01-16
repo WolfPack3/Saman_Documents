@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model ModelName="************************LGT Vestra MiFID 2 Processing" RetryPeriod="15" xmlns="http://www.abide-financial.com/gaspode/model">
+  <InputFile>
+    <Csv FileName="Abide MiFID File" HasHeaderRecord="true" ValidateColumnNames="false" Delimiter=",">
+      <Pattern>
+        <RegexLast Pattern="In/.*.csv" Replacement="" />
+      </Pattern>
+      <Fields>
+        <Field FieldID="Report_Status" FieldName="" />
+        <Field FieldID="Transaction_Reference_Number" FieldName="" />
+        <Field FieldID="Trading_Venue_Transaction_Identification_Code" FieldName="" />
+        <Field FieldID="Executing_Entity_Identification_Code" FieldName="" />
+        <Field FieldID="Investment_Firm_Covered_By_201465EU" FieldName="" />
+        <Field FieldID="Buyer_Identification_Code_Type" FieldName="" />
+        <Field FieldID="Buyer_NP_Code" FieldName="" />
+        <Field FieldID="Buyer_Identification_Code" FieldName="" />
+        <Field FieldID="Buyer_Country_of_the_Branch" FieldName="" />
+        <Field FieldID="Buyer_First_Names" FieldName="" />
+        <Field FieldID="Buyer_Surnames" FieldName="" />
+        <Field FieldID="Buyer_Date_of_Birth" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_Code_Type" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_NP_Code" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_Code" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_First_Names" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_Surnames" FieldName="" />
+        <Field FieldID="Buyer_Decision_Maker_Date_of_Birth" FieldName="" />
+        <Field FieldID="Seller_Identification_Code_Type" FieldName="" />
+        <Field FieldID="Seller_NP_Code" FieldName="" />
+        <Field FieldID="Seller_Identification_Code" FieldName="" />
+        <Field FieldID="Seller_Country_of_the_Branch" FieldName="" />
+        <Field FieldID="Seller_First_Names" FieldName="" />
+        <Field FieldID="Seller_Surnames" FieldName="" />
+        <Field FieldID="Seller_Date_of_Birth" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_Code_Type" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_NP_Code" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_Code" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_First_Names" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_Surnames" FieldName="" />
+        <Field FieldID="Seller_Decision_Maker_Date_of_Birth" FieldName="" />
+        <Field FieldID="Transmission_of_Order_Indicator" FieldName="" />
+        <Field FieldID="Transmitting_Firm_Identification_Code_For_the_Buyer" FieldName="" />
+        <Field FieldID="Transmitting_Firm_Identification_Code_For_the_Seller" FieldName="" />
+        <Field FieldID="Trading_Date_Time" FieldName="" />
+        <Field FieldID="Trading_Capacity" FieldName="" />
+        <Field FieldID="Quantity_Type" FieldName="" />
+        <Field FieldID="Quantity" FieldName="" />
+        <Field FieldID="Quantity_Currency" FieldName="" />
+        <Field FieldID="Derivative_Notional_Increase_Decrease" FieldName="" />
+        <Field FieldID="Price_Type" FieldName="" />
+        <Field FieldID="Price" FieldName="" />
+        <Field FieldID="Price_Currency" FieldName="" />
+        <Field FieldID="Net_Amount" FieldName="" />
+        <Field FieldID="Venue" FieldName="" />
+        <Field FieldID="Country_of_the_Branch_Membership" FieldName="" />
+        <Field FieldID="Upfront_Payment" FieldName="" />
+        <Field FieldID="Upfront_Payment_Currency" FieldName="" />
+        <Field FieldID="Complex_Trade_Component_ID" FieldName="" />
+        <Field FieldID="Instrument_Identification_Code" FieldName="" />
+        <Field FieldID="Instrument_Full_Name" FieldName="" />
+        <Field FieldID="Instrument_Classification" FieldName="" />
+        <Field FieldID="Notional_Currency_1" FieldName="" />
+        <Field FieldID="Notional_Currency_2" FieldName="" />
+        <Field FieldID="Price_Multiplier" FieldName="" />
+        <Field FieldID="Underlying_Instrument_Code" FieldName="" />
+        <Field FieldID="Underlying_Index_Name" FieldName="" />
+        <Field FieldID="Term_of_the_Underlying_Index" FieldName="" />
+        <Field FieldID="Option_Type" FieldName="" />
+        <Field FieldID="Strike_Price_Type" FieldName="" />
+        <Field FieldID="Strike_Price" FieldName="" />
+        <Field FieldID="Strike_Price_Currency" FieldName="" />
+        <Field FieldID="Option_Exercise_Style" FieldName="" />
+        <Field FieldID="Maturity_Date" FieldName="" />
+        <Field FieldID="Expiry_Date" FieldName="" />
+        <Field FieldID="Delivery_Type" FieldName="" />
+        <Field FieldID="Investment_Decision_Within_Firm_Type" FieldName="" />
+        <Field FieldID="Investment_Decision_Within_Firm_NP_Code" FieldName="" />
+        <Field FieldID="Investment_Decision_Within_Firm" FieldName="" />
+        <Field FieldID="Country_of_the_Branch_Responsible_For_the_Person_Making_the_Investment_Decision" FieldName="" />
+        <Field FieldID="Execution_Within_Firm_Type" FieldName="" />
+        <Field FieldID="Execution_Within_Firm_NP_Code" FieldName="" />
+        <Field FieldID="Execution_Within_Firm" FieldName="" />
+        <Field FieldID="Country_of_the_Branch_Supervising_the_Person_Responsible_for_the_Execution" FieldName="" />
+        <Field FieldID="Waiver_Indicator" FieldName="" />
+        <Field FieldID="Short_Selling_Indicator" FieldName="" />
+        <Field FieldID="OTC_Post_Trade_Indicator" FieldName="" />
+        <Field FieldID="Commodity_Derivative_Indicator" FieldName="" />
+        <Field FieldID="Securities_Financing_Transaction_Indicator" FieldName="" />
+        <Field FieldID="Branch_Location" FieldName="" />
+        <Field FieldID="Transaction_Type" FieldName="" />
+        <Field FieldID="Lifecycle_Event" FieldName="" />
+      </Fields>
+    </Csv>
+    <Variables>
+      <Variable VariableName="Jersey_Check"><![CDATA[If(Current["Buyer_Decision_Maker_Code"]=="213800PRT3PRPMSOFP78") 
+"TRUE";
+Else
+"FALSE";]]></Variable>
+      <Variable VariableName="Jersey_Exec_Check"><![CDATA[If(Current["Buyer_Decision_Maker_Code"]=="213800PRT3PRPMSOFP78" OR Current ["Seller_Decision_Maker_Code"]=="213800PRT3PRPMSOFP78" ) 
+"TRUE";
+Else
+"FALSE";]]></Variable>
+      <Variable VariableName="Jersey_Seller_Check"><![CDATA[If(Current ["Seller_Decision_Maker_Code"]=="213800PRT3PRPMSOFP78" ) 
+"TRUE";
+Else
+"FALSE";]]></Variable>
+    </Variables>
+    <Mappings Name="Mappings 1">
+      <Mapping OutputFieldName="Report status"><![CDATA[Current["Report_Status"]]]></Mapping>
+      <Mapping OutputFieldName="Transaction Reference Number"><![CDATA[Current["Transaction_Reference_Number"]]]></Mapping>
+      <Mapping OutputFieldName="Trading venue transaction identification code"><![CDATA[Current["Trading_Venue_Transaction_Identification_Code"]]]></Mapping>
+      <Mapping OutputFieldName="Executing entity identification code"><![CDATA[Current["Executing_Entity_Identification_Code"]]]></Mapping>
+      <Mapping OutputFieldName="Investment Firm Covered By 2014/65/EU"><![CDATA[Current["Investment_Firm_Covered_By_201465EU"]]]></Mapping>
+      <Mapping OutputFieldName="Buyer identification code type"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"LEI";
+Else
+Current["Buyer_Identification_Code_Type"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Buyer identification code"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"213800PRT3PRPMSOFP78";
+Else
+Current["Buyer_Identification_Code"];]]></Mapping>
+      <Mapping OutputFieldName="Country of the branch for the buyer"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Country_of_the_Branch"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer - first name(s)"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_First_Names"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer - Surname(s)"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Surnames"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer - Date of birth"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Date_of_Birth"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker code type"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Decision_Maker_Code_Type"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker code"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Decision_Maker_Code"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker - First Name(s)"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Decision_Maker_First_Names"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker' Surname(s)"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Decision_Maker_Surnames"];]]></Mapping>
+      <Mapping OutputFieldName="Buyer decision maker - Date of birth"><![CDATA[If(Variables["Jersey_Check"]=="TRUE") 
+"";
+Else
+Current["Buyer_Decision_Maker_Date_of_Birth"];]]></Mapping>
+      <Mapping OutputFieldName="Seller identification code type"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"LEI";
+Else
+Current["Seller_Identification_Code_Type"];]]></Mapping>
+      <Mapping OutputFieldName="Seller NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Seller identification code"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"213800PRT3PRPMSOFP78";
+Else
+Current["Seller_Identification_Code"];]]></Mapping>
+      <Mapping OutputFieldName="Country of the branch for the seller"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Country_of_the_Branch"];]]></Mapping>
+      <Mapping OutputFieldName="Seller - first name(s)"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_First_Names"];]]></Mapping>
+      <Mapping OutputFieldName="Seller - surname(s)"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Surnames"];]]></Mapping>
+      <Mapping OutputFieldName="Seller - date of birth"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Date_of_Birth"];]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker code type"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Decision_Maker_Code_Type"];]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker code"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Decision_Maker_Code"];]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker - First Name(s)"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Decision_Maker_First_Names"];]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker' Surname(s)"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Decision_Maker_Surnames"];]]></Mapping>
+      <Mapping OutputFieldName="Seller decision maker - Date of birth"><![CDATA[If(Variables["Jersey_Seller_Check"]=="TRUE") 
+"";
+Else
+Current["Seller_Decision_Maker_Date_of_Birth"];]]></Mapping>
+      <Mapping OutputFieldName="Transmission of order indicator"><![CDATA[Current["Transmission_of_Order_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="Transmitting firm identification code for the buyer"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Transmitting firm identification code for the seller"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Trading date time"><![CDATA[Current["Trading_Date_Time"]]]></Mapping>
+      <Mapping OutputFieldName="Trading capacity"><![CDATA[Current["Trading_Capacity"]]]></Mapping>
+      <Mapping OutputFieldName="Quantity - Type"><![CDATA[Current["Quantity_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Quantity"><![CDATA[Current["Quantity"]]]></Mapping>
+      <Mapping OutputFieldName="Quantity currency"><![CDATA[Current["Quantity_Currency"]]]></Mapping>
+      <Mapping OutputFieldName="Derivative notional increase/decrease"><![CDATA[Current["Derivative_Notional_Increase_Decrease"]]]></Mapping>
+      <Mapping OutputFieldName="Price - Type"><![CDATA[Current["Price_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Price"><![CDATA[Current["Price"]]]></Mapping>
+      <Mapping OutputFieldName="Price Currency"><![CDATA[Current["Price_Currency"]]]></Mapping>
+      <Mapping OutputFieldName="Net amount"><![CDATA[Current["Net_Amount"]]]></Mapping>
+      <Mapping OutputFieldName="Venue"><![CDATA[Current["Venue"]]]></Mapping>
+      <Mapping OutputFieldName="Country of the branch membership"><![CDATA[Current["Country_of_the_Branch_Membership"]]]></Mapping>
+      <Mapping OutputFieldName="Up-front payment"><![CDATA[Current["Upfront_Payment"]]]></Mapping>
+      <Mapping OutputFieldName="Up-front payment currency"><![CDATA[Current["Upfront_Payment_Currency"]]]></Mapping>
+      <Mapping OutputFieldName="Complex trade component id"><![CDATA[Current["Complex_Trade_Component_ID"]]]></Mapping>
+      <Mapping OutputFieldName="Instrument identification code"><![CDATA[Current["Instrument_Identification_Code"]]]></Mapping>
+      <Mapping OutputFieldName="Instrument full name"><![CDATA[Current["Instrument_Full_Name"]]]></Mapping>
+      <Mapping OutputFieldName="Instrument classification"><![CDATA[Current["Instrument_Classification"]]]></Mapping>
+      <Mapping OutputFieldName="Notional currency 1"><![CDATA[Current["Notional_Currency_1"]]]></Mapping>
+      <Mapping OutputFieldName="Notional currency 2"><![CDATA[Current["Notional_Currency_2"]]]></Mapping>
+      <Mapping OutputFieldName="Price multiplier"><![CDATA[Current["Price_Multiplier"]]]></Mapping>
+      <Mapping OutputFieldName="Underlying instrument code"><![CDATA[Current["Underlying_Instrument_Code"]]]></Mapping>
+      <Mapping OutputFieldName="Underlying index name"><![CDATA[Current["Underlying_Index_Name"]]]></Mapping>
+      <Mapping OutputFieldName="Term of the underlying index - value"><![CDATA[Current["Term_of_the_Underlying_Index"]]]></Mapping>
+      <Mapping OutputFieldName="Option type"><![CDATA[Current["Option_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Strike price - type"><![CDATA[Current["Strike_Price_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Strike price"><![CDATA[Current["Strike_Price"]]]></Mapping>
+      <Mapping OutputFieldName="Strike price currency"><![CDATA[Current["Strike_Price_Currency"]]]></Mapping>
+      <Mapping OutputFieldName="Option exercise style"><![CDATA[Current["Option_Exercise_Style"]]]></Mapping>
+      <Mapping OutputFieldName="Maturity date"><![CDATA[Current["Maturity_Date"]]]></Mapping>
+      <Mapping OutputFieldName="Expiry date"><![CDATA[Current["Expiry_Date"]]]></Mapping>
+      <Mapping OutputFieldName="Delivery type"><![CDATA[Current["Delivery_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Investment decision within firm - type"><![CDATA[If(Variables["Jersey_Exec_Check"]=="TRUE") 
+"";
+Else
+Current["Investment_Decision_Within_Firm_Type"];]]></Mapping>
+      <Mapping OutputFieldName="Investment decision within firm NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Investment decision within firm"><![CDATA[If(Variables["Jersey_Exec_Check"]=="TRUE") 
+"";
+Else
+Current["Investment_Decision_Within_Firm"];]]></Mapping>
+      <Mapping OutputFieldName="Country of the branch responsible for  the person  making the investment decision"><![CDATA[If(Variables["Jersey_Exec_Check"]=="TRUE") 
+"";
+Else
+Current["Country_of_the_Branch_Responsible_For_the_Person_Making_the_Investment_Decision"];]]></Mapping>
+      <Mapping OutputFieldName="Execution within firm - type"><![CDATA[Current["Execution_Within_Firm_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Execution within firm NP code"><![CDATA[""]]></Mapping>
+      <Mapping OutputFieldName="Execution within firm"><![CDATA[Current["Execution_Within_Firm"]]]></Mapping>
+      <Mapping OutputFieldName="Country of the branch supervising the person responsible for the execution"><![CDATA[Current["Country_of_the_Branch_Supervising_the_Person_Responsible_for_the_Execution"]]]></Mapping>
+      <Mapping OutputFieldName="Waiver indicator"><![CDATA[Current["Waiver_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="Short selling indicator"><![CDATA[Current["Short_Selling_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="OTC post-trade indicator"><![CDATA[Current["OTC_Post_Trade_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="Commodity derivative indicator"><![CDATA[Current["Commodity_Derivative_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="Securities financing transaction indicator"><![CDATA[Current["Securities_Financing_Transaction_Indicator"]]]></Mapping>
+      <Mapping OutputFieldName="Branch location"><![CDATA[Current["Branch_Location"]]]></Mapping>
+      <Mapping OutputFieldName="Transaction Type"><![CDATA[Current["Transaction_Type"]]]></Mapping>
+      <Mapping OutputFieldName="Lifecycle event"><![CDATA[Current["Lifecycle_Event"]]]></Mapping>
+    </Mappings>
+  </InputFile>
+  <OutputFile>
+    <Csv FileName="Output" HasHeaderRecord="true" ValidateColumnNames="false" Delimiter=",">
+      <Pattern>
+        <RegexFirst Pattern="In/.*.csv" Replacement="Out/ISCIMiFIDOutput_DATETIMENOWFORMAT='yyyyMMdd_HHmmss'_0001.csv" />
+      </Pattern>
+      <Fields>
+        <Field FieldID="Report status" FieldName="Report status" />
+        <Field FieldID="Transaction Reference Number" FieldName="Transaction Reference Number" />
+        <Field FieldID="Trading venue transaction identification code" FieldName="Trading venue transaction identification code" />
+        <Field FieldID="Executing entity identification code" FieldName="Executing entity identification code" />
+        <Field FieldID="Investment Firm Covered By 2014/65/EU" FieldName="Investment Firm Covered By 2014/65/EU" />
+        <Field FieldID="Buyer identification code type" FieldName="Buyer identification code type" />
+        <Field FieldID="Buyer NP code" FieldName="Buyer NP code" />
+        <Field FieldID="Buyer identification code" FieldName="Buyer identification code" />
+        <Field FieldID="Country of the branch for the buyer" FieldName="Country of the branch for the buyer" />
+        <Field FieldID="Buyer - first name(s)" FieldName="Buyer - first name(s)" />
+        <Field FieldID="Buyer - Surname(s)" FieldName="Buyer - Surname(s)" />
+        <Field FieldID="Buyer - Date of birth" FieldName="Buyer - Date of birth" />
+        <Field FieldID="Buyer decision maker code type" FieldName="Buyer decision maker code type" />
+        <Field FieldID="Buyer decision maker NP code" FieldName="Buyer decision maker NP code" />
+        <Field FieldID="Buyer decision maker code" FieldName="Buyer decision maker code" />
+        <Field FieldID="Buyer decision maker - First Name(s)" FieldName="Buyer decision maker - First Name(s)" />
+        <Field FieldID="Buyer decision maker' Surname(s)" FieldName="Buyer decision maker' Surname(s)" />
+        <Field FieldID="Buyer decision maker - Date of birth" FieldName="Buyer decision maker - Date of birth" />
+        <Field FieldID="Seller identification code type" FieldName="Seller identification code type" />
+        <Field FieldID="Seller NP code" FieldName="Seller NP code" />
+        <Field FieldID="Seller identification code" FieldName="Seller identification code" />
+        <Field FieldID="Country of the branch for the seller" FieldName="Country of the branch for the seller" />
+        <Field FieldID="Seller - first name(s)" FieldName="Seller - first name(s)" />
+        <Field FieldID="Seller - surname(s)" FieldName="Seller - surname(s)" />
+        <Field FieldID="Seller - date of birth" FieldName="Seller - date of birth" />
+        <Field FieldID="Seller decision maker code type" FieldName="Seller decision maker code type" />
+        <Field FieldID="Seller decision maker NP code" FieldName="Seller decision maker NP code" />
+        <Field FieldID="Seller decision maker code" FieldName="Seller decision maker code" />
+        <Field FieldID="Seller decision maker - First Name(s)" FieldName="Seller decision maker - First Name(s)" />
+        <Field FieldID="Seller decision maker' Surname(s)" FieldName="Seller decision maker' Surname(s)" />
+        <Field FieldID="Seller decision maker - Date of birth" FieldName="Seller decision maker - Date of birth" />
+        <Field FieldID="Transmission of order indicator" FieldName="Transmission of order indicator" />
+        <Field FieldID="Transmitting firm identification code for the buyer" FieldName="Transmitting firm identification code for the buyer" />
+        <Field FieldID="Transmitting firm identification code for the seller" FieldName="Transmitting firm identification code for the seller" />
+        <Field FieldID="Trading date time" FieldName="Trading date time" />
+        <Field FieldID="Trading capacity" FieldName="Trading capacity" />
+        <Field FieldID="Quantity - Type" FieldName="Quantity - Type" />
+        <Field FieldID="Quantity" FieldName="Quantity" />
+        <Field FieldID="Quantity currency" FieldName="Quantity currency" />
+        <Field FieldID="Derivative notional increase/decrease" FieldName="Derivative notional increase/decrease" />
+        <Field FieldID="Price - Type" FieldName="Price - Type" />
+        <Field FieldID="Price" FieldName="Price" />
+        <Field FieldID="Price Currency" FieldName="Price Currency" />
+        <Field FieldID="Net amount" FieldName="Net amount" />
+        <Field FieldID="Venue" FieldName="Venue" />
+        <Field FieldID="Country of the branch membership" FieldName="Country of the branch membership" />
+        <Field FieldID="Up-front payment" FieldName="Up-front payment" />
+        <Field FieldID="Up-front payment currency" FieldName="Up-front payment currency" />
+        <Field FieldID="Complex trade component id" FieldName="Complex trade component id" />
+        <Field FieldID="Instrument identification code" FieldName="Instrument identification code" />
+        <Field FieldID="Instrument full name" FieldName="Instrument full name" />
+        <Field FieldID="Instrument classification" FieldName="Instrument classification" />
+        <Field FieldID="Notional currency 1" FieldName="Notional currency 1" />
+        <Field FieldID="Notional currency 2" FieldName="Notional currency 2" />
+        <Field FieldID="Price multiplier" FieldName="Price multiplier" />
+        <Field FieldID="Underlying instrument code" FieldName="Underlying instrument code" />
+        <Field FieldID="Underlying index name" FieldName="Underlying index name" />
+        <Field FieldID="Term of the underlying index - value" FieldName="Term of the underlying index - value" />
+        <Field FieldID="Option type" FieldName="Option type" />
+        <Field FieldID="Strike price - type" FieldName="Strike price - type" />
+        <Field FieldID="Strike price" FieldName="Strike price" />
+        <Field FieldID="Strike price currency" FieldName="Strike price currency" />
+        <Field FieldID="Option exercise style" FieldName="Option exercise style" />
+        <Field FieldID="Maturity date" FieldName="Maturity date" />
+        <Field FieldID="Expiry date" FieldName="Expiry date" />
+        <Field FieldID="Delivery type" FieldName="Delivery type" />
+        <Field FieldID="Investment decision within firm - type" FieldName="Investment decision within firm - type" />
+        <Field FieldID="Investment decision within firm NP code" FieldName="Investment decision within firm NP code" />
+        <Field FieldID="Investment decision within firm" FieldName="Investment decision within firm" />
+        <Field FieldID="Country of the branch responsible for  the person  making the investment decision" FieldName="Country of the branch responsible for  the person  making the investment decision" />
+        <Field FieldID="Execution within firm - type" FieldName="Execution within firm - type" />
+        <Field FieldID="Execution within firm NP code" FieldName="Execution within firm NP code" />
+        <Field FieldID="Execution within firm" FieldName="Execution within firm" />
+        <Field FieldID="Country of the branch supervising the person responsible for the execution" FieldName="Country of the branch supervising the person responsible for the execution" />
+        <Field FieldID="Waiver indicator" FieldName="Waiver indicator" />
+        <Field FieldID="Short selling indicator" FieldName="Short selling indicator" />
+        <Field FieldID="OTC post-trade indicator" FieldName="OTC post-trade indicator" />
+        <Field FieldID="Commodity derivative indicator" FieldName="Commodity derivative indicator" />
+        <Field FieldID="Securities financing transaction indicator" FieldName="Securities financing transaction indicator" />
+        <Field FieldID="Branch location" FieldName="Branch location" />
+        <Field FieldID="Transaction Type" FieldName="Transaction Type" />
+        <Field FieldID="Lifecycle event" FieldName="Lifecycle event" />
+      </Fields>
+    </Csv>
+  </OutputFile>
+</Model>
